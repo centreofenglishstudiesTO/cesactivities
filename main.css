@@ -1,0 +1,235 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+img {
+    width:70%;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header.navigation {
+    background: rgba(247, 194, 78, 0.65);
+    margin: 0px;
+    position: fixed;
+    z-index: 99999;
+}
+
+header.navigation::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    padding: 8px;
+    margin: 0 0 0 -40px;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0 -40px 0 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 40px;
+    padding-top: 40px;
+    position: relative;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Ubuntu, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #830202;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #830202;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+a.nav:hover {
+    color: #830202;
+    text-decoration: none;
+    font-family: Ubuntu, Arial, sans-serif;
+}
+
+.hero {
+    background-image: url('https://i.imgur.com/U63nXzZ.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    position: relative;
+    top: 0;
+    bottom: 0;
+    height: 2000px;
+    z-index: -10;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.2);
+    height: 100%;
+    width: 100%;
+    z-index: -5;
+
+}
+
+.flex-container {
+    display: flex;
+}
+
+.content {
+    position: relative;
+    height: auto;
+    top: -90px;
+}
+
+.links {
+    height: auto;
+    padding-top: 450px;
+    padding-bottom: 50px;
+    width: 100%;
+    z-index: 1;
+}
+
+.background-grey {
+    background-color: #f2f2f2;
+}
+
+.background-white {
+    background-color: #ffffff;
+}
+
+.background-yellow {
+    background-color: #f7c24e;;
+}
+
+p, span {
+    font-size: 13pt;
+    color: #000000;
+    font-family:"Merriweather", "Lora", Serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 30pt;
+    color: #f7c24e;
+    font-family: Ubuntu, Geneva, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-decoration-style: none;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 15pt;
+    color: #f7c24e;
+    font-family: Ubuntu, Geneva, sans-serif;
+}
+
+h3 {
+    font-size: 17pt;
+    color: #830202;
+    font-family: Ubuntu, Geneva, sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+a {
+    font-size: 13pt;
+    color: #f7c24e;
+    font-family: "Merriweather", "Lora", Serif;
+}
+
+a:hover {
+    color: #830202;
+    text-decoration: overline;
+    font-family: "Merriweather", "Lora", Serif;
+}
+
+a.button {
+    color: #000000;
+    font-weight: bold;
+}
+
+input.surveybutton {
+    width: 300px;
+    padding: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 150%;
+    background: #3366cc;
+    color: #fff;
+    border: 1px solid #3366cc;
+    border-radius: 10px;
+    -moz-box-shadow:: 6px 6px 5px #999;
+    -webkit-box-shadow:: 6px 6px 5px #999;
+    box-shadow:: 6px 6px 5px #999;
+}
+
+.formbutton {
+    width: 200px;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 90%;
+    font-family: "Ubuntu", SansSerif;
+    background: #f7c24e;
+    font-color: #000000;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    -moz-box-shadow:: 6px 6px 5px #999;
+    -webkit-box-shadow:: 6px 6px 5px #999;
+    box-shadow:: 6px 6px 5px #999;
+}
+
+.formbutton:hover {
+    color: #f7c24e;
+    background: #000;
+    border: 1px solid #fff;
+}
+
+:target:before {
+    content:"";
+    display:block;
+    height: 102px; /* fixed header height*/
+    margin:-102px 0 0; /* negative fixed header height */
+}
