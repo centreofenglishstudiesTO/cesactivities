@@ -141,7 +141,7 @@ a.nav:hover {
     background-color: #f7c24e;;
 }
 
-p, span {
+p, span, li {
     font-size: 13pt;
     color: #000000;
     font-family:"Merriweather", "Lora", Serif;
