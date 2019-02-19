@@ -227,6 +227,11 @@ input.surveybutton {
     border: 1px solid #fff;
 }
 
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 :target:before {
     content:"";
     display:block;
