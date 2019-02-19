@@ -230,6 +230,8 @@ input.surveybutton {
 .flex {
   display: flex;
   flex-wrap: wrap;
+  display: -ms-flexbox; 
+    -ms-flex-wrap: wrap;
 }
 
 :target:before {
