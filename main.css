@@ -234,6 +234,7 @@ input.surveybutton {
   display: -webkit-flex;          
   display: flex;
  flex-wrap: wrap;
+  flex: auto;
 }
 
 :target:before {
