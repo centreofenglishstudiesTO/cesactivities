@@ -228,10 +228,12 @@ input.surveybutton {
 }
 
 .flex {
+    width: 100%;
+   display: -moz-box;             
+  display: -ms-flexbox;           
+  display: -webkit-flex;          
   display: flex;
-  flex-wrap: wrap;
-  display: -ms-flexbox; 
-    -ms-flex-wrap: wrap;
+ flex-wrap: wrap;
 }
 
 :target:before {
